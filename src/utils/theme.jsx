@@ -1,12 +1,12 @@
 import { extendTheme } from "@chakra-ui/react";
-// import bgImg from "../assets/img/bg/BG.png";
+// import bgImg from "../assets/img/bg/back1.jpg";
 
 const theme = extendTheme({
 	styles: {
 		global: {
 			// styles for the `body`
 			body: {
-				bg: "#141416",
+				bg: "#2c2c2c",
 				color: "white",
 				// backgroundImage: `url(${bgImg})`,
 			},
@@ -14,7 +14,7 @@ const theme = extendTheme({
 			a: {
 				color: "teal.500",
 				_hover: {
-					textDecoration: "underline",
+					textDecoration: "none",
 				},
 			},
 		},
