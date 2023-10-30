@@ -4,7 +4,7 @@ import homeMe from "./../assets/img/home/home-me.webp";
 
 export function Home() {
 	return (
-		<Flex flexDirection={"row"} gap={"56"}>
+		<Flex flexDirection={"row"} gap={"56"} mb={"44"}>
 			<Flex flexDirection={"column"}>
 				<Heading as={"h2"} size={"2xl"}>
 					Hello
