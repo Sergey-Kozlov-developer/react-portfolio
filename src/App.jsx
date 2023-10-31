@@ -12,7 +12,10 @@ function App() {
 			<Header />
 
 			<HomePage />
-			<Skills />
+			<Container maxW="container.md" mb={"48"}>
+				<Skills />
+			</Container>
+
 			<About />
 		</Container>
 	);
