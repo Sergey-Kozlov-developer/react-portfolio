@@ -3,10 +3,10 @@ import logo from "./../../assets/img/logo/logo.svg";
 
 const Header = () => {
 	return (
-		<header className="flex flex-row justify-between items-center">
+		<header className="flex flex-row items-center justify-between">
 			<div className="flex items-center">
-				<img className="w-16 h-12 pr-3" src={logo} alt="Logo" />
-				<h1 className="text-3xl text-white tracking-wide">DVLPR</h1>
+				<img className="h-12 w-16 pr-3" src={logo} alt="Logo" />
+				<h1 className="text-3xl tracking-wide text-white">DVLPR</h1>
 			</div>
 
 			<nav className="text-white">

@@ -12,7 +12,7 @@ export const Navigation = () => {
 			{navLinks.map((navLink) => (
 				<Link
 					key={navLink.page}
-					className="transition ease-in-out hover:scale-110 hover:text-purple-600 duration-300"
+					className="transition duration-300 ease-in-out hover:scale-110 hover:text-purple-600"
 				>
 					{navLink.page}
 				</Link>
