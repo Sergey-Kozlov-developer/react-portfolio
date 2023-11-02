@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 
 export const Home = () => {
 	return (
-		<section className="mt-40 flex w-full justify-between">
+		<motion.section
+			className="mt-40 flex w-full justify-between"
+			initial={{ width: 0 }}
+			animate={{ width: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+		>
 			<div className="relative mt-12 w-2/4 text-left">
 				<motion.h1
 					animate={{ x: [0, -150, 0], opacity: 1, scale: 1 }}
@@ -68,6 +73,6 @@ export const Home = () => {
 			>
 				<img src={meImage} alt="Me" />
 			</motion.div>
-		</section>
+		</motion.section>
 	);
 };

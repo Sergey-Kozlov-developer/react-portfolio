@@ -24,7 +24,12 @@ const Skills = () => {
 	];
 
 	return (
-		<section className="mx-auto mt-16 grid w-full grid-cols-3 items-center justify-items-center gap-20">
+		<motion.section
+			className="mx-auto mt-16 grid w-full grid-cols-3 items-center justify-items-center gap-20"
+			// initial={{ width: 0 }}
+			// animate={{ width: "100%" }}
+			// exit={{ x: window.innerWidth }}
+		>
 			{items.map((item) => (
 				<motion.div
 					key={item.id}
@@ -53,7 +58,7 @@ const Skills = () => {
 					</span>
 				</motion.div>
 			))}
-		</section>
+		</motion.section>
 	);
 };
 
