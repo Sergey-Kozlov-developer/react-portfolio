@@ -15,7 +15,7 @@ export default {
 				"text-white": "#E4E4E4",
 			},
 			animation: {
-				skills: "skills 3s ease-in-out infinite",
+				skills: "skills 3s ease-in infinite",
 			},
 			keyframes: {
 				skills: {

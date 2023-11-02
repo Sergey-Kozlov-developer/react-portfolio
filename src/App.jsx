@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/header";
 import { Home } from "./components/home";
 import Skills from "./components/skills";
@@ -8,8 +9,10 @@ function App() {
 		<Wrapper>
 			<Header />
 			<main>
-				<Home />
-				<Skills />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/skills" element={<Skills />} />
+				</Routes>
 			</main>
 		</Wrapper>
 	);

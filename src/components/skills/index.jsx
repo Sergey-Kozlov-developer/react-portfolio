@@ -8,6 +8,8 @@ import sassImage from "./../../assets/img/skills/sass.svg";
 import tailwImage from "./../../assets/img/skills/tailwind.svg";
 import gitImage from "./../../assets/img/skills/github.svg";
 
+import { motion } from "framer-motion";
+
 const Skills = () => {
 	const items = [
 		{ id: 1, image: `${jsImage}`, title: "JavaScript" },
@@ -22,10 +24,23 @@ const Skills = () => {
 	];
 
 	return (
-		<section className="mx-auto mb-56 mt-56 grid w-full grid-cols-3 items-center justify-items-center gap-20">
+		<section className="mx-auto mt-16 grid w-full grid-cols-3 items-center justify-items-center gap-20">
 			{items.map((item) => (
-				<div
+				<motion.div
 					key={item.id}
+					initial={{
+						opacity: 0,
+						// if odd index card,slide from right instead of left
+						x: item.id % 2 === 0 ? 50 : -50,
+					}}
+					whileInView={{
+						opacity: 1,
+						x: 0, // Slide in to its original position
+						transition: {
+							duration: 1, // Animation duration
+						},
+					}}
+					viewport={{ once: true }}
 					className="flex h-52 w-52 flex-col items-center justify-center rounded-2xl bg-stone-800"
 				>
 					<img
@@ -36,7 +51,7 @@ const Skills = () => {
 					<span className="mt-6 text-center text-xl text-white">
 						{item.title}
 					</span>
-				</div>
+				</motion.div>
 			))}
 		</section>
 	);

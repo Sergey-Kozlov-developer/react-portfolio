@@ -1,27 +1,73 @@
 import meImage from "./../../assets/img/home/home-me.webp";
+import { motion } from "framer-motion";
 
 export const Home = () => {
 	return (
 		<section className="mt-40 flex w-full justify-between">
 			<div className="relative mt-12 w-2/4 text-left">
-				<h1 className="mb-5 text-5xl text-white">Hello</h1>
-				<h1 className="mb-5 whitespace-pre-line text-7xl text-white">
+				<motion.h1
+					animate={{ x: [0, -150, 0], opacity: 1, scale: 1 }}
+					transition={{
+						duration: 5,
+						delay: 0.3,
+						ease: [0.5, 0.71, 1, 1.15],
+					}}
+					initial={{ opacity: 0, scale: 0.5 }}
+					whileHover={{ scale: 1.2 }}
+					className="mb-5 text-5xl text-white"
+				>
+					Hello
+				</motion.h1>
+				<motion.h1
+					animate={{ x: [0, 150, 0], opacity: 1, scale: 1 }}
+					transition={{
+						duration: 5,
+						delay: 0.3,
+						ease: [0.5, 0.71, 1, 1.15],
+					}}
+					initial={{ opacity: 0, scale: 0.5 }}
+					whileHover={{ scale: 1.2 }}
+					className="mb-5 whitespace-pre-line text-7xl text-white"
+				>
 					{`I'm Sergei\n Kozlov`}
-				</h1>
-				<p className="mb-5 whitespace-pre-line text-white">
+				</motion.h1>
+				<motion.p
+					animate={{ x: [100, 150, 0], opacity: 1, scale: 1 }}
+					transition={{
+						duration: 5,
+						delay: 0.3,
+						ease: [0.5, 0.71, 1, 1.15],
+					}}
+					initial={{ opacity: 0, scale: 0.5 }}
+					whileHover={{ scale: 1.2 }}
+					className="mb-5 whitespace-pre-line text-white"
+				>
 					{`I've been doing web design, front-end and back-end\ndevelopment for a year now. Do you need a website design,
 					site layout, or maybe a\nturnkey website? Then contact me`}
-				</p>
-				<button
+				</motion.p>
+				<motion.button
 					type="button"
+					animate={{ x: [0, -150, 0], opacity: 1, scale: 1 }}
+					transition={{
+						duration: 5,
+						delay: 0.3,
+						ease: [0.5, 0.71, 1, 1.15],
+					}}
+					initial={{ opacity: 0, scale: 0.5 }}
+					whileHover={{ scale: 1.2 }}
 					className="mb-2 mr-2 rounded-lg bg-orange-400 px-5 py-2.5 text-sm font-medium text-white hover:bg-orange-500  hover:text-purple-600 focus:z-10 focus:outline-none "
 				>
 					Contact me
-				</button>
+				</motion.button>
 			</div>
-			<div className="flex w-2/4">
+			<motion.div
+				whileHover={{ scale: 1.2 }}
+				whileTap={{ scale: 2 }}
+				transition={{ duration: 3 }}
+				className="flex w-2/4"
+			>
 				<img src={meImage} alt="Me" />
-			</div>
+			</motion.div>
 		</section>
 	);
 };
