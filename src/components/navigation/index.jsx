@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Navigation = () => {
 	const navLinks = [
@@ -12,13 +12,17 @@ export const Navigation = () => {
 	return (
 		<div className="flex gap-36">
 			{navLinks.map((navLink) => (
-				<Link
+				<NavLink
 					key={navLink.page}
 					to={navLink.to}
-					className="transition duration-300 ease-in-out hover:scale-110 hover:text-purple-600"
+					className={({ isActive }) =>
+						isActive
+							? "text-orange-400"
+							: "transition duration-300 ease-in-out hover:scale-110 hover:text-orange-500"
+					}
 				>
 					{navLink.page}
-				</Link>
+				</NavLink>
 			))}
 		</div>
 	);
