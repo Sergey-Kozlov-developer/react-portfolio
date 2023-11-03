@@ -3,14 +3,16 @@ import { Home } from "./../home";
 import Skills from "./../skills";
 import { AnimatePresence } from "framer-motion";
 
-function AnimateRoutes() {
+function AnimateRoutes(isVisible) {
 	const location = useLocation();
 	return (
-		<AnimatePresence>
-			<Routes location={location} key={location.pathname}>
-				<Route path="/" element={<Home />} />
-				<Route path="/skills" element={<Skills />} />
-			</Routes>
+		<AnimatePresence initial={false} mode="wait">
+			{isVisible && (
+				<Routes location={location} key={location.pathname}>
+					<Route path="/" element={<Home />} />
+					<Route path="/skills" element={<Skills />} />
+				</Routes>
+			)}
 		</AnimatePresence>
 	);
 }

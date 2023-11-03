@@ -26,37 +26,24 @@ const Skills = () => {
 	return (
 		<motion.section
 			className="mx-auto mt-16 grid w-full grid-cols-3 items-center justify-items-center gap-20"
-			// initial={{ width: 0 }}
-			// animate={{ width: "100%" }}
-			// exit={{ x: window.innerWidth }}
+			initial={{ width: 0 }}
+			animate={{ width: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
 		>
 			{items.map((item) => (
-				<motion.div
+				<div
 					key={item.id}
-					initial={{
-						opacity: 0,
-						// if odd index card,slide from right instead of left
-						x: item.id % 2 === 0 ? 50 : -50,
-					}}
-					whileInView={{
-						opacity: 1,
-						x: 0, // Slide in to its original position
-						transition: {
-							duration: 1, // Animation duration
-						},
-					}}
-					viewport={{ once: true }}
 					className="flex h-52 w-52 flex-col items-center justify-center rounded-2xl bg-stone-800"
 				>
 					<img
 						src={item.image}
 						alt="Skills"
-						className="animate-skills w-20"
+						className="w-20 animate-skills"
 					/>
 					<span className="mt-6 text-center text-xl text-white">
 						{item.title}
 					</span>
-				</motion.div>
+				</div>
 			))}
 		</motion.section>
 	);

@@ -1,4 +1,5 @@
 import meImage from "./../../assets/img/home/home-me.webp";
+
 import { motion } from "framer-motion";
 
 export const Home = () => {
@@ -7,7 +8,7 @@ export const Home = () => {
 			className="mt-40 flex w-full justify-between"
 			initial={{ width: 0 }}
 			animate={{ width: "100%" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
 		>
 			<div className="relative mt-12 w-2/4 text-left">
 				<motion.h1
