@@ -9,6 +9,7 @@ import tailwImage from "./../../assets/img/skills/tailwind.svg";
 import gitImage from "./../../assets/img/skills/github.svg";
 
 import { motion } from "framer-motion";
+import AnimatePage from "../animatePage";
 
 const Skills = () => {
 	const items = [
@@ -24,28 +25,25 @@ const Skills = () => {
 	];
 
 	return (
-		<motion.section
-			className="mx-auto mt-16 grid w-full grid-cols-3 items-center justify-items-center gap-20"
-			initial={{ width: 0 }}
-			animate={{ width: "100%" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
-		>
-			{items.map((item) => (
-				<div
-					key={item.id}
-					className="flex h-52 w-52 flex-col items-center justify-center rounded-2xl bg-stone-800"
-				>
-					<img
-						src={item.image}
-						alt="Skills"
-						className="w-20 animate-skills"
-					/>
-					<span className="mt-6 text-center text-xl text-white">
-						{item.title}
-					</span>
-				</div>
-			))}
-		</motion.section>
+		<AnimatePage>
+			<motion.section className="mx-auto mt-16 grid w-full grid-cols-3 items-center justify-items-center gap-20">
+				{items.map((item) => (
+					<div
+						key={item.id}
+						className="flex h-52 w-52 flex-col items-center justify-center rounded-2xl bg-stone-800"
+					>
+						<img
+							src={item.image}
+							alt="Skills"
+							className="w-20 animate-skills"
+						/>
+						<span className="mt-6 text-center text-xl text-white">
+							{item.title}
+						</span>
+					</div>
+				))}
+			</motion.section>
+		</AnimatePage>
 	);
 };
 
