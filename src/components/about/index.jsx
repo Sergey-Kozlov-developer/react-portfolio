@@ -36,7 +36,7 @@ const About = () => {
 					{educationJson.map((edu) => (
 						<div
 							key={edu.id}
-							className="flex items-center justify-between"
+							className="mb-8 flex items-center justify-between"
 						>
 							<div>
 								{edu.title}
@@ -52,8 +52,10 @@ const About = () => {
 								</button>
 								<div>Aug 2015 - Dec 2020</div>
 							</div>
+							{/* <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" /> */}
 						</div>
 					))}
+
 					{/* <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" /> */}
 					{/* 2 */}
 					{/* <div className="flex items-center justify-between">
