@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import CardPorfolio from "../components/portfolio";
 import axios from "axios";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+import AnimatePage from "../components/animatePage";
 
 const Portfolio = () => {
+	// получение данных из mockapi
 	const [categories, setCategories] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 	// hook redux вытаскиваем определенное из state фильтра
@@ -22,11 +24,24 @@ const Portfolio = () => {
 			);
 	}, []);
 
-	const card = categories.map((element) => (
-		<CardPorfolio key={element.id} {...element} />
-	));
-
-	return <>{card}</>;
+	return (
+		<AnimatePage>
+			<section className="mx-auto mt-16 grid w-full grid-cols-3 gap-20 ">
+				{isLoading ? (
+					<h1 className="text-3xl text-white">Загрузка данных...</h1>
+				) : (
+					categories.map((element) => (
+						<div
+							key={element.id}
+							className="w-96 justify-items-center rounded-lg bg-blue-gray-100"
+						>
+							<CardPorfolio {...element} />
+						</div>
+					))
+				)}
+			</section>
+		</AnimatePage>
+	);
 };
 
 export default Portfolio;
