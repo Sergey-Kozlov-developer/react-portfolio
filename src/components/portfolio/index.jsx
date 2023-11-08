@@ -1,35 +1,38 @@
+/* eslint-disable react/prop-types */
 import { CardFooter, Typography, Tooltip } from "@material-tailwind/react";
 
-import portfolioJson from "./../../utils/portfolio.json";
+// import portfolioJson from "./../../utils/portfolio.json";
 import AnimatePage from "../animatePage";
 
-export function CarouselTransition() {
+// eslint-disable-next-line react/prop-types
+export function CardPorfolio({
+	title,
+	body,
+	image,
+	hrefApple,
+	hrefGoogle,
+	hrefGit,
+	id,
+}) {
 	return (
 		<AnimatePage>
 			<section className=" mx-auto mt-16 grid w-full grid-cols-3 gap-20 ">
-				{portfolioJson.map((portfolio) => (
-					<div
-						key={portfolio.id}
-						className="w-96 justify-items-center rounded-lg bg-blue-gray-100"
-					>
-						<img
-							className="rounded-t-lg"
-							src={portfolio.image}
-							alt=""
-						/>
-						<div className="p-6 text-center">
-							<h5 className="text-neutral-800 dark:text-neutral-50 mb-2 text-xl font-medium leading-tight">
-								{portfolio.title}
-							</h5>
-							<p className="text-neutral-600 dark:text-neutral-200 mb-4 text-base">
-								{portfolio.body}
-							</p>
-						</div>
+				<div className="w-96 justify-items-center rounded-lg bg-blue-gray-100">
+					<img className="rounded-t-lg" src={image} alt="" />
+					<div className="p-6 text-center">
+						<h5 className="text-neutral-800 dark:text-neutral-50 mb-2 text-xl font-medium leading-tight">
+							{title}
+						</h5>
+						<p className="text-neutral-600 dark:text-neutral-200 mb-4 text-base">
+							{body}
+						</p>
+					</div>
+					{id == 1 || id == 6 ? (
 						<CardFooter className="flex justify-center gap-7 pt-2">
 							<Tooltip content="AppStore">
 								<Typography
 									as="a"
-									href={portfolio.hrefApple}
+									href={hrefApple}
 									variant="lead"
 									color="blue"
 									textGradient
@@ -41,19 +44,19 @@ export function CarouselTransition() {
 							<Tooltip content="Play Маркет">
 								<Typography
 									as="a"
-									href={portfolio.hrefGoogle}
+									href={hrefGoogle}
 									variant="lead"
-									color="light-blue"
+									color="red"
 									textGradient
 									target="_blank"
 								>
-									<i className="fab fa-google" />
+									<i className="fab fa-google-play" />
 								</Typography>
 							</Tooltip>
 							<Tooltip content="GitHub">
 								<Typography
 									as="a"
-									href={portfolio.hrefGit}
+									href={hrefGit}
 									variant="lead"
 									color="purple"
 									textGradient
@@ -63,11 +66,26 @@ export function CarouselTransition() {
 								</Typography>
 							</Tooltip>
 						</CardFooter>
-					</div>
-				))}
+					) : (
+						<CardFooter className="flex justify-center gap-7 pt-2">
+							<Tooltip content="GitHub">
+								<Typography
+									as="a"
+									href={hrefGit}
+									variant="lead"
+									color="purple"
+									textGradient
+									target="_blank"
+								>
+									<i className="fab fa-github" />
+								</Typography>
+							</Tooltip>
+						</CardFooter>
+					)}
+				</div>
 			</section>
 		</AnimatePage>
 	);
 }
 
-export default CarouselTransition;
+export default CardPorfolio;
