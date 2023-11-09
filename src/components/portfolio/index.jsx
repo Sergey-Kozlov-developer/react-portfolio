@@ -10,6 +10,7 @@ export function CardPorfolio({
 	hrefGoogle,
 	hrefGit,
 	id,
+	// technologies,
 }) {
 	return (
 		<>
@@ -21,6 +22,18 @@ export function CardPorfolio({
 				<p className="text-neutral-600 dark:text-neutral-200 mb-4 text-base">
 					{body}
 				</p>
+				{id == 1 || id == 6 ? (
+					<div className="text-left">
+						<p>Приложение написано на FLutter.</p>
+						<p>Используеммый стэк:</p>
+						<p>{`Flutter\nMobX\nProvider\nFirebase\nGoRouter\nGetIt`}</p>
+						<span className="font-medium">
+							Больше 1000 пользователей
+						</span>
+					</div>
+				) : (
+					""
+				)}
 			</div>
 			{id == 1 || id == 6 ? (
 				<CardFooter className="flex justify-center gap-7 pt-2">
