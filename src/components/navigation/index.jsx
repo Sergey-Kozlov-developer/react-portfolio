@@ -7,7 +7,7 @@ export const Navigation = () => {
 		{ page: "Skills", to: "/skills" },
 
 		{ page: "Portfolio", to: "/portfolio" },
-		{ page: "Contact", to: "/contact" },
+		// { page: "Contact", to: "/contact" },
 	];
 	return (
 		<div className="flex gap-36">

@@ -27,9 +27,13 @@ export function CardPorfolio({
 						<p>Приложение написано на FLutter.</p>
 						<p>Используеммый стэк:</p>
 						<p>{`Flutter\nMobX\nProvider\nFirebase\nGoRouter\nGetIt`}</p>
-						<span className="font-medium">
-							Больше 1000 пользователей
-						</span>
+						{id == 1 ? (
+							<span className="font-medium">
+								Больше 1000 пользователей
+							</span>
+						) : (
+							""
+						)}
 					</div>
 				) : (
 					""
