@@ -76,7 +76,7 @@ export const Home = () => {
 					whileHover={{ scale: 1.2 }}
 					whileTap={{ scale: 2 }}
 					transition={{ duration: 3 }}
-					className="flex sm:w-full md:w-2/4"
+					className=" flex w-2/4 sm:w-full md:w-96"
 				>
 					<img src={meImage} alt="Me" />
 				</motion.div>
