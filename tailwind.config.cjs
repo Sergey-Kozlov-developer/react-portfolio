@@ -6,8 +6,11 @@ module.exports = withMT({
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		screens: {
-			xl: "1240px",
-			md: "1024px",
+			sm: "359px",
+			md: "759px",
+			lg: "1023px",
+			xl: "1239px",
+			// md: "1024px",
 		},
 		extend: {
 			colors: {

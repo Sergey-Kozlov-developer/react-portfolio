@@ -26,7 +26,7 @@ export function CardPorfolio({
 					<div className="text-left">
 						<p>Приложение написано на FLutter.</p>
 						<p>Используеммый стэк:</p>
-						<p>{`Flutter\nMobX\nProvider\nFirebase\nGoRouter\nGetIt`}</p>
+						<p className="whitespace-pre-line">{`Flutter\nMobX\nProvider\nFirebase\nGoRouter\nGetIt`}</p>
 						{id == 1 ? (
 							<span className="font-medium">
 								Больше 1000 пользователей

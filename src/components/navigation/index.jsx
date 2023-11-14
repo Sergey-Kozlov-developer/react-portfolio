@@ -10,7 +10,7 @@ export const Navigation = () => {
 		// { page: "Contact", to: "/contact" },
 	];
 	return (
-		<div className="flex gap-36">
+		<div className="flex sm:mt-4 sm:gap-4 md:mt-0 md:gap-10 lg:gap-20 xl:gap-36">
 			{navLinks.map((navLink) => (
 				<NavLink
 					key={navLink.page}
