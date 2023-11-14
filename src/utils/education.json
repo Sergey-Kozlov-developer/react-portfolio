@@ -1,20 +1,34 @@
 [
 	{
 		"id": 1,
-		"title": "Flutter в мобильной разработке под iOS & Android",
-		"body": "Skill-Branch - образовательная платформа",
-		"date": "10.10.10"
+		"title": "React",
+		"body": "Самостоятельное изучение по открытым источникам",
+		"date": "01.10.2023",
+		"link": "https://www.youtube.com/@ArchakovBlog",
+		"linkName": "YouTube"
 	},
 	{
 		"id": 2,
-		"title": "Flutter в мобильной разработке под iOS & Android",
-		"body": "Skill-Branch - образовательная платформа",
-		"date": "10.10.10"
+		"title": "JavaScript",
+		"body": "Фундаментальный JavaScript - Stepik",
+		"date": "01.09.2023",
+		"link": "https://stepik.org/course/114165",
+		"linkName": "Stepik"
 	},
 	{
 		"id": 3,
+		"title": "HTML/CSS/JavaScript",
+		"body": "Самостоятельное изучение по открытым источникам",
+		"date": "01.09.2023",
+		"link": "https://www.youtube.com/@WebCademy",
+		"linkName": "YouTube"
+	},
+	{
+		"id": 4,
 		"title": "Flutter в мобильной разработке под iOS & Android",
 		"body": "Skill-Branch - образовательная платформа",
-		"date": "10.10.10"
+		"date": "01.04.2021",
+		"link": "https://skill-branch.ru/flutter",
+		"linkName": "Skill-Branch"
 	}
 ]

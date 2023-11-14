@@ -20,7 +20,7 @@ export const Home = () => {
 						whileHover={{ scale: 1.2 }}
 						className="mb-5 text-5xl text-white"
 					>
-						Hello
+						Привет!
 					</motion.h1>
 					<motion.h1
 						animate={{ x: [0, 150, 0], opacity: 1, scale: 1 }}
@@ -33,7 +33,7 @@ export const Home = () => {
 						whileHover={{ scale: 1.2 }}
 						className="mb-5 whitespace-pre-line text-7xl text-white"
 					>
-						{`I'm Sergei\n Kozlov`}
+						{`Я Сергей\n Козлов`}
 					</motion.h1>
 					<motion.p
 						animate={{ x: [100, 150, 0], opacity: 1, scale: 1 }}
@@ -46,8 +46,7 @@ export const Home = () => {
 						whileHover={{ scale: 1.2 }}
 						className="mb-5 whitespace-pre-line text-white"
 					>
-						{`I've been doing web design, front-end and back-end\ndevelopment for a year now. Do you need a website design,
-					site layout, or maybe a\nturnkey website? Then contact me`}
+						{`Занимаюсь мобильной разработкой, фронтендом.\nВам нужно мобильное приложение или, может быть, сайт под ключ?\nТогда свяжитесь со мной`}
 					</motion.p>
 					<motion.button
 						type="button"

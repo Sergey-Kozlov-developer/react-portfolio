@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 
 export const Navigation = () => {
 	const navLinks = [
-		{ page: "Home", to: "/" },
-		{ page: "About", to: "/about" },
-		{ page: "Skills", to: "/skills" },
+		{ page: "Главная", to: "/" },
+		{ page: "Обо мне", to: "/about" },
+		{ page: "Навыки", to: "/skills" },
 
-		{ page: "Portfolio", to: "/portfolio" },
+		{ page: "Портфолио", to: "/portfolio" },
 		// { page: "Contact", to: "/contact" },
 	];
 	return (

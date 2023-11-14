@@ -21,78 +21,50 @@ const educationImage = (
 const About = () => {
 	return (
 		<AnimatePage>
-			<section className="mt-32 flex w-full flex-col items-center text-white">
+			<section className="mt-28 flex w-full flex-col items-center text-white">
 				<div className="w-3/4">
-					<h1 className="mb-8 text-4xl">About</h1>
+					<h1 className="mb-8 text-4xl">Обо мне</h1>
 					<p>
-						The Generator App is an online tool that helps you to
-						export ready-made templates ready to work as your future
-						website. It helps you to combine slides, panels and
-						other components and export it as a set of static files:
-						HTML/CSS/JS.
+						Разработкой начал заниматься в 2020 году. На данный
+						момент в AppStore и Play Маркет, у меня есть два
+						приложения для стоматологов. Приложение каталог по
+						имплантационной системе MIS с функцией корзины и
+						отправки заказа, и приложение для стоматологической
+						конференции.
 					</p>
-					<h1 className="mb-8 mt-8 text-4xl"> Education</h1>
+					<h1 className="mb-8 mt-8 text-4xl"> Мое обучение</h1>
 					{/* 1 */}
 					{educationJson.map((edu) => (
-						<div
-							key={edu.id}
-							className="mb-8 flex items-center justify-between"
-						>
-							<div>
-								{edu.title}
-								<div className="flex gap-1">
-									{educationImage}
-									{edu.body}
+						<>
+							<div
+								key={edu.id}
+								className="mb-8 flex items-center justify-between"
+							>
+								<div>
+									{edu.title}
+									<div className="flex gap-1">
+										{educationImage}
+										{edu.body}
+									</div>
+								</div>
+
+								<div>
+									<a
+										href={edu.link}
+										target="_blank"
+										rel="noreferrer"
+										className="transition duration-300 ease-in-out hover:text-orange-500"
+									>
+										{edu.linkName}
+									</a>
+									<div>{edu.date}</div>
 								</div>
 							</div>
-
 							<div>
-								<button className="mb-2 mr-2 rounded-lg bg-orange-400 px-5 py-2.5 text-sm font-medium text-white hover:bg-orange-500  hover:text-purple-600 focus:z-10 focus:outline-none ">
-									Skill-Branch
-								</button>
-								<div>Aug 2015 - Dec 2020</div>
+								<hr className="my-8 h-px border-t-0 bg-orange-50 bg-transparent bg-gradient-to-r from-transparent to-transparent opacity-25 dark:opacity-100" />
 							</div>
-							{/* <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" /> */}
-						</div>
+						</>
 					))}
-
-					{/* <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" /> */}
-					{/* 2 */}
-					{/* <div className="flex items-center justify-between">
-						<div>
-							Flutter в мобильной разработке под iOS & Android
-							<div className="flex gap-1">
-								{educationImage}
-								Skill-Branch - образовательная платформа
-							</div>
-						</div>
-
-						<div>
-							<button className="mb-2 mr-2 rounded-lg bg-orange-400 px-5 py-2.5 text-sm font-medium text-white hover:bg-orange-500  hover:text-purple-600 focus:z-10 focus:outline-none ">
-								Skill-Branch
-							</button>
-							<div>Aug 2015 - Dec 2020</div>
-						</div>
-					</div>
-					<hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" /> */}
-					{/* 3 */}
-					{/* <div className="flex items-center justify-between">
-						<div>
-							Flutter в мобильной разработке под iOS & Android
-							<div className="flex gap-1">
-								{educationImage}
-								Skill-Branch - образовательная платформа
-							</div>
-						</div>
-
-						<div>
-							<button className="mb-2 mr-2 rounded-lg bg-orange-400 px-5 py-2.5 text-sm font-medium text-white hover:bg-orange-500  hover:text-purple-600 focus:z-10 focus:outline-none ">
-								Skill-Branch
-							</button>
-							<div>Aug 2015 - Dec 2020</div>
-						</div>
-					</div>
-					<hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" /> */}
 				</div>
 			</section>
 		</AnimatePage>
