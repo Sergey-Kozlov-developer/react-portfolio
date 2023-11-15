@@ -21,7 +21,7 @@ const educationImage = (
 const About = () => {
 	return (
 		<AnimatePage>
-			<section className="mt-28 flex w-full flex-col items-center text-white">
+			<section className=" flex w-full flex-col items-center text-white sm:mt-10 md:mt-28">
 				<div className="w-3/4">
 					<h1 className="mb-8 text-4xl">Обо мне</h1>
 					<p>
