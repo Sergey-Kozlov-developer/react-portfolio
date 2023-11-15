@@ -7,7 +7,7 @@ import AnimatePage from "../animatePage";
 export const Home = () => {
 	return (
 		<AnimatePage>
-			<motion.section className="mt-40 flex w-full justify-between sm:mt-10 sm:flex-col-reverse md:flex-row">
+			<motion.section className="flex justify-between sm:mt-10 sm:flex-col-reverse md:mt-40 md:flex-row lg:mt-40 lg:w-full">
 				<div className="relative text-left sm:mt-2 md:mt-12 md:w-2/4">
 					<motion.h1
 						animate={{ x: [0, -70, 0], opacity: 1, scale: 1 }}
@@ -18,7 +18,7 @@ export const Home = () => {
 						}}
 						initial={{ opacity: 0, scale: 0.5 }}
 						whileHover={{ scale: 1.2 }}
-						className="text-white sm:mb-2 sm:text-xl md:mb-5 md:text-5xl"
+						className="text-white sm:mb-2 sm:text-xl md:mb-5 md:text-5xl lg:mb-8"
 					>
 						Привет!
 					</motion.h1>
@@ -31,9 +31,9 @@ export const Home = () => {
 						}}
 						initial={{ opacity: 0, scale: 0.5 }}
 						whileHover={{ scale: 1.2 }}
-						className=" text-white sm:mb-1 sm:whitespace-nowrap sm:text-2xl md:mb-5 md:whitespace-pre-line md:text-7xl"
+						className=" text-white sm:mb-1 sm:text-2xl md:mb-5 md:text-7xl lg:mb-8"
 					>
-						{`Я, Сергей\n Козлов`}
+						Я Сергей
 					</motion.h1>
 					<motion.p
 						animate={{ x: [100, 70, 0], opacity: 1, scale: 1 }}
@@ -58,7 +58,7 @@ export const Home = () => {
 						}}
 						initial={{ opacity: 0, scale: 0.5 }}
 						// whileHover={{ scale: 1.2 }}
-						className="mb-2 mr-2 rounded-lg bg-white px-5 py-2.5 text-sm hover:bg-orange-500 focus:z-10 focus:outline-none"
+						className="mb-2 mr-2 rounded-lg bg-white px-5 py-2.5 hover:bg-orange-500 focus:z-10 focus:outline-none lg:mt-8"
 					>
 						<Typography
 							as="a"
@@ -76,7 +76,7 @@ export const Home = () => {
 					whileHover={{ scale: 1.2 }}
 					whileTap={{ scale: 2 }}
 					transition={{ duration: 3 }}
-					className=" flex w-2/4 sm:w-full md:w-96"
+					className="flex sm:w-full md:h-96 md:w-96 lg:h-auto lg:w-2/4"
 				>
 					<img src={meImage} alt="Me" />
 				</motion.div>
