@@ -4,7 +4,10 @@ import { ButtonGroup, Button } from "@material-tailwind/react";
 function Categories({ value, onChangeCategory }) {
 	const categories = ["Все работы", "FLutter", "React", "Верстка"];
 	return (
-		<ButtonGroup className="mt-16 gap-20 " fullWidth>
+		<ButtonGroup
+			className="sm:mt-10 sm:grid sm:grid-cols-2 sm:gap-10 md:mt-16 md:gap-20"
+			fullWidth
+		>
 			{categories.map((category, index) => (
 				<Button
 					key={index}
