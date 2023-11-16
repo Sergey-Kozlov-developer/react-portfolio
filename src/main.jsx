@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<Provider store={store}>
 			<ThemeProvider>
-				<BrowserRouter basename="/react-portfolio/">
+				<BrowserRouter basename={import.meta.env.BASE_URL}>
 					<ParallaxProvider>
 						<App />
 					</ParallaxProvider>
