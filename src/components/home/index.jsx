@@ -1,4 +1,4 @@
-// import meImage from "../assets/img/home/home-me.webp";
+import meImage from "./../../assets/img/home/home-me.webp";
 import { Typography } from "@material-tailwind/react";
 
 import { motion } from "framer-motion";
@@ -78,7 +78,7 @@ export const Home = () => {
 					transition={{ duration: 3 }}
 					className="flex sm:w-full md:h-96 md:w-96 lg:h-auto lg:w-2/4"
 				>
-					<img src="./assets/img/home/home-me.webp" alt="Me" />
+					<img src={meImage} alt="Me" />
 				</motion.div>
 			</motion.section>
 		</AnimatePage>
