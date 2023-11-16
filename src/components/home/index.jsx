@@ -1,4 +1,4 @@
-import meImage from "./../../assets/img/home/home-me.webp";
+import meImage from "./assets/img/home/home-me.webp";
 import { Typography } from "@material-tailwind/react";
 
 import { motion } from "framer-motion";
