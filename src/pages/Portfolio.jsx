@@ -41,14 +41,14 @@ const Portfolio = () => {
 				value={categoryId}
 				onChangeCategory={onChangeCategory}
 			/>
-			<section className="mx-auto mt-16 grid w-full gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+			<section className="mt-16 grid w-full gap-20 sm:mx-auto sm:mb-40 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 				{isLoading ? (
 					<h1 className="text-3xl text-white">Загрузка данных...</h1>
 				) : (
 					categories.map((element) => (
 						<div
 							key={element.id}
-							className=" justify-items-center rounded-lg bg-blue-gray-100 sm:w-auto lg:w-96"
+							className=" justify-items-center rounded-lg bg-blue-gray-100 sm:w-auto"
 						>
 							<CardPorfolio {...element} />
 						</div>
