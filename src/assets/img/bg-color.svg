@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="1440" preserveAspectRatio="none" viewBox="0 0 1440 1440">
+	<g mask="url(&quot;#SvgjsMask1009&quot;)" fill="none">
+		<rect width="1440" height="1440" x="0" y="0" fill="#0e2a47"></rect>
+		<!-- <path d="M305.81 620.99L313.43 620.99L313.43 628.61L305.81 628.61z" fill="#d3b714"></path> -->
+		<!-- <path d="M419.31 1422.92L544.75 1422.92L544.75 1548.36L419.31 1548.36z" stroke="rgba(239, 184, 10, 1)"></path> -->
+		<!-- <path d="M630.11 593.76L647.06 593.76L647.06 716.48L630.11 716.48z" fill="#d3b714"></path> -->
+		<!-- <path d="M831.07 264.73a69.34 69.34 0 1 0-82.89 111.18z" stroke="#d3b714"></path> -->
+		<!-- <path d="M185.57 1157.68L201.87 1157.68L201.87 1173.98L185.57 1173.98z" fill="rgba(239, 184, 10, 1)"></path> -->
+		<!-- <path d="M222.7 327.98L244.69 327.98L244.69 429.54L222.7 429.54z" fill="rgba(123, 25, 237, 1)"></path> -->
+		<!-- <path d="M581.23 718.09L590.1 718.09L590.1 750.02L581.23 750.02z" stroke="#d3b714"></path> -->
+		<!-- <path d="M1185.26 1139.21a112.31 112.31 0 1 0-32.54 222.25z" stroke="rgba(123, 25, 237, 1)"></path> -->
+		<!-- <path d="M1191.41 345.11 a31.39 31.39 0 1 0 62.78 0 a31.39 31.39 0 1 0 -62.78 0z" stroke="rgba(123, 25, 237, 1)"></path> -->
+		<!-- <path d="M343.98 118.8L418.04 118.8L418.04 192.86L343.98 192.86z" stroke="#d3b714"></path> -->
+		<!-- <path d="M610 760.31 a63.89 63.89 0 1 0 127.78 0 a63.89 63.89 0 1 0 -127.78 0z" stroke="rgba(123, 25, 237, 1)"></path> -->
+		<path d="M1134.85 549.03 a99.38 99.38 0 1 0 198.76 0 a99.38 99.38 0 1 0 -198.76 0z" fill="rgba(239, 184, 10, 1)"></path>
+		<path d="M39.67 799.58 a122.93 122.93 0 1 0 245.86 0 a122.93 122.93 0 1 0 -245.86 0z" fill="rgba(239, 184, 10, 1)"></path>
+	</g>
+	<defs>
+		<mask id="SvgjsMask1009">
+			<rect width="1440" height="1440" fill="#ffffff"></rect>
+		</mask>
+	</defs>
+</svg>

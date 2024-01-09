@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./../home";
-import Skills from "./../skills";
+// import Skills from "./../skills";
 import { AnimatePresence } from "framer-motion";
 import About from "../about";
 import Portfolio from "../../pages/Portfolio";
@@ -12,7 +12,7 @@ function AnimateRoutes(isVisible) {
 			{isVisible && (
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home />} />
-					<Route path="/skills" element={<Skills />} />
+					{/* <Route path="/skills" element={<Skills />} /> */}
 					<Route path="/about" element={<About />} />
 					<Route path="/portfolio" element={<Portfolio />} />
 				</Routes>

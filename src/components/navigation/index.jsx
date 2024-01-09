@@ -4,7 +4,7 @@ export const Navigation = () => {
 	const navLinks = [
 		{ page: "Главная", to: "/" },
 		{ page: "Обо мне", to: "/about" },
-		{ page: "Навыки", to: "/skills" },
+		// { page: "Навыки", to: "/skills" },
 
 		{ page: "Портфолио", to: "/portfolio" },
 		// { page: "Contact", to: "/contact" },
