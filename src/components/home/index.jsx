@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 
 import { motion } from "framer-motion";
 import AnimatePage from "../animatePage";
-// import Skills from "../skills/index";
+import Skills from "../skills/index";
 
 export const Home = () => {
 	return (
@@ -34,11 +34,13 @@ export const Home = () => {
 							<i className="fab fa-github" />
 						</Typography>
 					</button>
-					{/* <Skills /> */}
+					<h1 className='text-white mt-7 text-2xl'>Мои навыки:</h1>
+					<Skills />
 				</div>
 				<div className="flex sm:w-full md:h-96 md:w-96 lg:h-auto lg:w-2/4">
 					<img src={meImage} alt="Me" />
 				</div>
+				
 			</motion.section>
 		</AnimatePage>
 	);

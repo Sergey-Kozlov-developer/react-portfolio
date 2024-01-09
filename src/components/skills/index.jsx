@@ -26,16 +26,18 @@ const Skills = () => {
 
 	return (
 		<AnimatePage>
-			<motion.section className="mx-auto mt-16 grid w-full items-center justify-items-center sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-20">
+			{/* <motion.section className="mx-auto mt-16 grid w-full items-center justify-items-center sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-20"> */}
+			<motion.section className="mx-auto mt-10 grid w-full items-center justify-items-start sm:grid-cols-2 sm:gap-4 md:grid-cols-4 md:gap-10">
 				{items.map((item) => (
 					<div
 						key={item.id}
-						className="bg-stone-800 flex h-52 w-52 flex-col items-center justify-center rounded-2xl"
+						className="bg-stone-800 flex h-12 w-12 flex-col items-center justify-center rounded-2xl"
 					>
 						<img
 							src={item.image}
 							alt="Skills"
-							className="w-20 animate-skills"
+							// className="w-20 animate-skills"
+							className="w-10"
 						/>
 						{/* <span className="mt-6 text-center text-xl text-white">
 							{item.title}
