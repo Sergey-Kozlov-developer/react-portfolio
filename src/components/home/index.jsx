@@ -10,13 +10,13 @@ export const Home = () => {
 		<AnimatePage>
 			<motion.section className="flex justify-between sm:mt-10 sm:flex-col-reverse md:mt-40 md:flex-row lg:mt-20 lg:w-full">
 				<div className="relative text-left sm:mt-2 md:mt-12 md:w-2/4">
-					<h1 className="text-white sm:mb-2 sm:text-xl md:mb-5 md:text-5xl lg:mb-8 ">
+					<h1 className="font-bold text-white sm:mb-2 sm:text-xl md:mb-5 md:text-5xl lg:mb-8 ">
 						Привет!
 					</h1>
-					<h1 className=" text-white sm:mb-1 sm:text-2xl md:mb-5 md:text-7xl lg:mb-8">
+					<h1 className="font-bold text-white sm:mb-1 sm:text-2xl md:mb-5 md:text-7xl lg:mb-8">
 						Я Сергей
 					</h1>
-					<p className=" whitespace-pre-line text-white sm:mb-2 sm:whitespace-normal md:mb-5 md:whitespace-pre-line">
+					<p className="whitespace-pre-line font-medium text-white sm:mb-2 sm:whitespace-normal md:mb-5 md:whitespace-pre-line">
 						{`Занимаюсь мобильной разработкой, фронтендом.\nВам нужно мобильное приложение или, может быть, сайт под ключ?\nТогда свяжитесь со мной`}
 					</p>
 					<button
@@ -34,13 +34,13 @@ export const Home = () => {
 							<i className="fab fa-github" />
 						</Typography>
 					</button>
-					<h1 className='text-white mt-7 text-2xl'>Мои навыки:</h1>
+					<h1 className="mt-7 text-2xl text-white">Мои навыки:</h1>
 					<Skills />
 				</div>
-				<div className="flex sm:w-full md:h-96 md:w-96 lg:h-auto lg:w-2/4">
+				<div className="flex sm:w-full lg:h-auto lg:w-2/4">
+					{/* md:h-96 md:w-96 */}
 					<img src={meImage} alt="Me" />
 				</div>
-				
 			</motion.section>
 		</AnimatePage>
 	);

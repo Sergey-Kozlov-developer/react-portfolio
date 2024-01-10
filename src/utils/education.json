@@ -1,6 +1,14 @@
 [
 	{
 		"id": 1,
+		"title": "Frontend разработчик. JavaScript + React",
+		"body": "Курс от WebCademy",
+		"date": "15.01.2024",
+		"link": "https://webcademy.ru/jscourse/",
+		"linkName": "WebCademy"
+	},
+	{
+		"id": 2,
 		"title": "React",
 		"body": "Самостоятельное изучение по открытым источникам",
 		"date": "01.10.2023",
@@ -8,7 +16,7 @@
 		"linkName": "YouTube"
 	},
 	{
-		"id": 2,
+		"id": 3,
 		"title": "JavaScript",
 		"body": "Фундаментальный JavaScript - Stepik",
 		"date": "01.09.2023",
@@ -16,7 +24,7 @@
 		"linkName": "Stepik"
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"title": "HTML/CSS/JavaScript",
 		"body": "Самостоятельное изучение по открытым источникам",
 		"date": "01.09.2023",
@@ -24,7 +32,7 @@
 		"linkName": "YouTube"
 	},
 	{
-		"id": 4,
+		"id": 5,
 		"title": "Flutter в мобильной разработке под iOS & Android",
 		"body": "Skill-Branch - образовательная платформа",
 		"date": "01.04.2021",

@@ -27,7 +27,7 @@ const Skills = () => {
 	return (
 		<AnimatePage>
 			{/* <motion.section className="mx-auto mt-16 grid w-full items-center justify-items-center sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-20"> */}
-			<motion.section className="mx-auto mt-10 grid w-full items-center justify-items-start sm:grid-cols-2 sm:gap-4 md:grid-cols-4 md:gap-10">
+			<motion.section className="mx-auto mt-10 grid w-full items-center justify-items-start sm:grid-cols-3 sm:gap-4 md:grid-cols-4 md:gap-10">
 				{items.map((item) => (
 					<div
 						key={item.id}

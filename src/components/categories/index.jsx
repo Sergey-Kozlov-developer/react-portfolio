@@ -5,7 +5,7 @@ function Categories({ value, onChangeCategory }) {
 	const categories = ["Все работы", "FLutter", "React", "Верстка"];
 	return (
 		<ButtonGroup
-			className="sm:mt-10 sm:grid sm:grid-cols-2 sm:gap-10 md:mt-16 md:gap-10 lg:flex"
+			className="font-bold sm:mt-10 sm:grid sm:grid-cols-2 sm:gap-10 md:mt-16 md:gap-10 lg:flex"
 			fullWidth
 		>
 			{categories.map((category, index) => (
@@ -14,7 +14,7 @@ function Categories({ value, onChangeCategory }) {
 					onClick={() => onChangeCategory(index)}
 					className={
 						value === index
-							? "rounded-lg  bg-blue-gray-100 text-orange-500"
+							? "rounded-lg bg-blue-gray-100 text-orange-500"
 							: "rounded-lg hover:bg-blue-gray-100 hover:text-black"
 					}
 				>

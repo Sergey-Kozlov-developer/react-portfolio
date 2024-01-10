@@ -16,7 +16,7 @@ export function CardPorfolio({
 		<>
 			<img className="rounded-t-lg" src={image} alt="" />
 			<div className="p-6 text-center">
-				<h5 className="text-neutral-800 dark:text-neutral-50 mb-2 text-xl font-medium leading-tight">
+				<h5 className="text-neutral-800 dark:text-neutral-50 mb-2 text-xl font-bold leading-tight">
 					{title}
 				</h5>
 				<p className="text-neutral-600 dark:text-neutral-200 mb-4 text-base">

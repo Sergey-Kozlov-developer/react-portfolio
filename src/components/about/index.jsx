@@ -23,7 +23,7 @@ const About = () => {
 		<AnimatePage>
 			<section className=" flex w-full flex-col items-center text-white sm:mt-10 md:mt-28">
 				<div className="w-3/4">
-					<h1 className="mb-8 text-4xl">Обо мне</h1>
+					<h1 className="mb-8 text-4xl font-bold">Обо мне</h1>
 					<p>
 						Разработкой начал заниматься в 2020 году. На данный
 						момент в AppStore и Play Маркет, у меня есть два
@@ -32,7 +32,10 @@ const About = () => {
 						отправки заказа, и приложение для стоматологической
 						конференции.
 					</p>
-					<h1 className="mb-8 mt-8 text-4xl"> Мое обучение</h1>
+					<h1 className="mb-8 mt-8 text-4xl font-bold">
+						{" "}
+						Мое обучение
+					</h1>
 					{/* 1 */}
 					{educationJson.map((edu) => (
 						<>
@@ -41,7 +44,7 @@ const About = () => {
 								className="mb-8 flex items-center justify-between"
 							>
 								<div>
-									{edu.title}
+									<div className="font-bold">{edu.title}</div>
 									<div className="flex gap-1">
 										{educationImage}
 										{edu.body}
@@ -53,7 +56,7 @@ const About = () => {
 										href={edu.link}
 										target="_blank"
 										rel="noreferrer"
-										className="transition duration-300 ease-in-out hover:text-orange-500"
+										className="font-bold transition duration-300 ease-in-out hover:text-orange-500"
 									>
 										{edu.linkName}
 									</a>

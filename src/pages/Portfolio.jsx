@@ -23,9 +23,7 @@ const Portfolio = () => {
 		setIsLoading(true);
 		const category = categoryId > 0 ? `category=${categoryId}` : "";
 		axios
-			.get(
-				`https://654b5e825b38a59f28eef213.mockapi.io/categories?${category}`
-			)
+			.get(`https://8386530960e900d2.mokky.dev/categories?${category}`)
 			.then(
 				(res) => {
 					setCategories(res.data);
